@@ -1,8 +1,5 @@
 package br.com.lucienj.bytebank.teste
 
-import br.com.lucienj.modelo.*
-import modelo.*
-
 fun testaFuncionarios() {
     println("Bem vindo ao Bytebank")
     val sistemaInterno = br.com.lucienj.bytebank.modelo.SistemaInterno()
