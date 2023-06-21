@@ -1,9 +1,9 @@
 package br.com.lucienj.bytebank.modelo
 
-class ContaCorrente(titular: String, numero: Int) : br.com.lucienj.bytebank.modelo.Conta(
+class ContaCorrente(titular: Cliente, numero: Int) : Conta(
     titular = titular,
     numero = numero
-), br.com.lucienj.bytebank.modelo.Transferivel {
+), Transferivel {
     override fun saca(valor: Double): Boolean {
         val valorComTaxa = valor + valor * 0.1
         if (this.saldo >= valor) {
@@ -16,7 +16,7 @@ class ContaCorrente(titular: String, numero: Int) : br.com.lucienj.bytebank.mode
     }
 
 
-    override fun transfere(value: Double, destino: br.com.lucienj.bytebank.modelo.Conta): Boolean {
+    override fun transfere(value: Double, destino: Conta): Boolean {
         if (saca(value)) {
             destino.deposita(value)
             return true;

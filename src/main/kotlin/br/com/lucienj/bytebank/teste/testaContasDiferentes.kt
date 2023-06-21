@@ -1,11 +1,15 @@
 package br.com.lucienj.bytebank.teste
 
+import br.com.lucienj.bytebank.modelo.Cliente
 import br.com.lucienj.bytebank.modelo.ContaCorrente
 import br.com.lucienj.bytebank.modelo.ContaPoupanca
 
+
 fun testaContasDiferentes() {
-    val contaCorrente = br.com.lucienj.bytebank.modelo.ContaCorrente(titular = "Alex", numero = 1000)
-    val contaPoupanca = br.com.lucienj.bytebank.modelo.ContaPoupanca(titular = "Fran", numero = 1001)
+    val clientAlex = Cliente(nome = "Alex", cpf = "222.222.222-22", 2)
+    val contaCorrente = ContaCorrente(titular = clientAlex, numero = 2222)
+    val clienteFran = Cliente(nome = "Fran", cpf = "111.111.111-11", 1)
+    val contaPoupanca = ContaPoupanca(titular = clienteFran, numero = 1111)
     contaCorrente.deposita(1000.0)
     contaPoupanca.deposita(1000.0)
 

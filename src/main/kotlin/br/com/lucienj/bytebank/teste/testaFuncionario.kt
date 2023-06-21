@@ -1,9 +1,11 @@
 package br.com.lucienj.bytebank.teste
 
+import br.com.lucienj.bytebank.modelo.*
+
 fun testaFuncionarios() {
     println("Bem vindo ao Bytebank")
-    val sistemaInterno = br.com.lucienj.bytebank.modelo.SistemaInterno()
-    val alex = br.com.lucienj.bytebank.modelo.Analista(
+    val sistemaInterno = SistemaInterno()
+    val alex = Analista(
         nome = "Alex",
         cpf = "111.111.111-11",
         salario = 1000.0,
@@ -14,7 +16,7 @@ fun testaFuncionarios() {
     println("Salario: ${alex.salario}")
     println("Bonificação: ${alex.bonificacao}")
 
-    val maria = br.com.lucienj.bytebank.modelo.Analista(nome = "Maria", "444.444.444-44", 1500.0)
+    val maria = Analista(nome = "Maria", "444.444.444-44", 1500.0)
 
     println("#########################")
     println("Nome: ${maria.nome}")
@@ -22,7 +24,7 @@ fun testaFuncionarios() {
     println("Salario: ${maria.salario}")
     println("Bonificação: ${maria.bonificacao}")
 
-    val fran = br.com.lucienj.bytebank.modelo.Gerente(
+    val fran = Gerente(
         nome = "Fran",
         cpf = "222.222.222-22",
         salario = 2000.0,
@@ -38,7 +40,7 @@ fun testaFuncionarios() {
         println("Bonificação: ${fran.bonificacao}")
     }
 
-    val gui = br.com.lucienj.bytebank.modelo.Diretor(
+    val gui = Diretor(
         nome = "Gui",
         cpf = "333.333.333-33",
         salario = 4000.0,
@@ -55,7 +57,7 @@ fun testaFuncionarios() {
         println("Bonificação: ${gui.bonificacao}")
     }
 
-    val calculadora = br.com.lucienj.bytebank.modelo.CalculadoraBonificacao()
+    val calculadora = CalculadoraBonificacao()
     calculadora.registra(alex)
     calculadora.registra(fran)
     calculadora.registra(gui)

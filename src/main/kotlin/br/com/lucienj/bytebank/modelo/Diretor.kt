@@ -6,12 +6,12 @@ class Diretor(
     salario: Double,
     senha: Int,
     val plr: Double
-) : br.com.lucienj.bytebank.modelo.FuncionarioAdmin(
+) : FuncionarioAdmin(
     nome = nome,
     cpf = cpf,
     salario = salario,
     senha = senha
-), br.com.lucienj.bytebank.modelo.Autenticavel {
+), Autenticavel {
 
     override val bonificacao: Double
         get() {

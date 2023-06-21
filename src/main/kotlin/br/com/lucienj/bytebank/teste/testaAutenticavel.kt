@@ -1,14 +1,12 @@
 package br.com.lucienj.bytebank.teste
 
-import br.com.lucienj.bytebank.modelo.Cliente
-import br.com.lucienj.bytebank.modelo.Diretor
 import br.com.lucienj.bytebank.modelo.Gerente
 import br.com.lucienj.bytebank.modelo.SistemaInterno
 
 fun testaAutenticavel() {
 
-    val sistemaInterno = br.com.lucienj.bytebank.modelo.SistemaInterno()
-    val fran = br.com.lucienj.bytebank.modelo.Gerente(
+    val sistemaInterno = SistemaInterno()
+    val fran = Gerente(
         nome = "Fran",
         cpf = "222.222.222-22",
         salario = 2000.0,

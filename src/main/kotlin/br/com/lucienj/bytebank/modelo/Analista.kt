@@ -4,7 +4,7 @@ class Analista(
     nome: String,
     cpf: String,
     salario: Double
-) : br.com.lucienj.bytebank.modelo.Funcionario(
+) : Funcionario(
     nome = nome,
     cpf = cpf,
     salario = salario

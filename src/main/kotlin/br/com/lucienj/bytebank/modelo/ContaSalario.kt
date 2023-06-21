@@ -1,6 +1,6 @@
 package br.com.lucienj.bytebank.modelo
 
-class ContaSalario(titular: String, numero: Int) : br.com.lucienj.bytebank.modelo.Conta(
+class ContaSalario(titular: Cliente, numero: Int) : Conta(
     titular = titular,
     numero = numero
 ) {
