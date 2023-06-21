@@ -1,11 +1,11 @@
-package teste
+package br.com.lucienj.bytebank.teste
 
-import modelo.ContaCorrente
-import modelo.ContaPoupanca
+import br.com.lucienj.bytebank.modelo.ContaCorrente
+import br.com.lucienj.bytebank.modelo.ContaPoupanca
 
 fun testaContasDiferentes() {
-    val contaCorrente = ContaCorrente(titular = "Alex", numero = 1000)
-    val contaPoupanca = ContaPoupanca(titular = "Fran", numero = 1001)
+    val contaCorrente = br.com.lucienj.bytebank.modelo.ContaCorrente(titular = "Alex", numero = 1000)
+    val contaPoupanca = br.com.lucienj.bytebank.modelo.ContaPoupanca(titular = "Fran", numero = 1001)
     contaCorrente.deposita(1000.0)
     contaPoupanca.deposita(1000.0)
 

@@ -1,13 +1,13 @@
-package modelo
+package br.com.lucienj.bytebank.modelo
 
-import modelo.Funcionario
+import br.com.lucienj.bytebank.modelo.Funcionario
 
 abstract class FuncionarioAdmin(
     nome: String,
     cpf: String,
     salario: Double,
     val senha: Int
-) : Funcionario(
+) : br.com.lucienj.bytebank.modelo.Funcionario(
     nome = nome,
     cpf = cpf,
     salario = salario

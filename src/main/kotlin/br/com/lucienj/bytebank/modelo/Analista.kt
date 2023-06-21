@@ -1,10 +1,10 @@
-package modelo
+package br.com.lucienj.bytebank.modelo
 
 class Analista(
     nome: String,
     cpf: String,
     salario: Double
-) : Funcionario(
+) : br.com.lucienj.bytebank.modelo.Funcionario(
     nome = nome,
     cpf = cpf,
     salario = salario

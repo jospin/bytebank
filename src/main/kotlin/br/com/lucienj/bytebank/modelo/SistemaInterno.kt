@@ -1,10 +1,10 @@
-package modelo
+package br.com.lucienj.bytebank.modelo
 
-import modelo.Autenticavel
+import br.com.lucienj.bytebank.modelo.Autenticavel
 
 class SistemaInterno {
 
-    fun entra(autenticavel: Autenticavel, senha : Int): Boolean {
+    fun entra(autenticavel: br.com.lucienj.bytebank.modelo.Autenticavel, senha : Int): Boolean {
         if(autenticavel.autentica(senha)) {
             println("Bem vindo ao Bytebank")
             return true

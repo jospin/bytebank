@@ -1,4 +1,4 @@
-package modelo
+package br.com.lucienj.bytebank.modelo
 
 class Diretor(
     nome: String,
@@ -6,12 +6,12 @@ class Diretor(
     salario: Double,
     senha: Int,
     val plr: Double
-) : FuncionarioAdmin(
+) : br.com.lucienj.bytebank.modelo.FuncionarioAdmin(
     nome = nome,
     cpf = cpf,
     salario = salario,
     senha = senha
-), Autenticavel {
+), br.com.lucienj.bytebank.modelo.Autenticavel {
 
     override val bonificacao: Double
         get() {

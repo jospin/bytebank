@@ -1,14 +1,14 @@
-package teste
+package br.com.lucienj.bytebank.teste
 
-import modelo.Conta
+import br.com.lucienj.bytebank.modelo.Conta
 
-fun printa(conta: Conta) {
+fun printa(conta: br.com.lucienj.bytebank.modelo.Conta) {
 
     println("################################################")
     println("Titular ${conta.titular}")
     println("Número da conta ${conta.numero}")
 
-    testaCondicoes(conta.saldo)
+    br.com.lucienj.bytebank.teste.testaCondicoes(conta.saldo)
 
     println("################################################")
     println()

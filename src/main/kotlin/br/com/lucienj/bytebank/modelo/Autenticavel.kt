@@ -1,4 +1,4 @@
-package modelo
+package br.com.lucienj.bytebank.modelo
 
 interface Autenticavel {
     val senha: Int
